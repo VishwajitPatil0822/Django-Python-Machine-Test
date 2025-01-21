@@ -27,7 +27,10 @@ With the use of Django for backend development and a reliable MySQL database for
 * Users: The system supports multiple users with different roles.
 * Clients: Each client can have multiple projects.
 * rojects: Projects can be assigned to multiple users for collaboration.
+
+  
 ## API Endpoints
+
 | Endpoint          | Method     |  Description                                |
 |-------------------|------------|---------------------------------------------|
 | /client/	        | GET        | Fetch all clients                           |
@@ -42,6 +45,15 @@ With the use of Django for backend development and a reliable MySQL database for
 | /project/<int:pk>/| DELETE     | Delete a project
 
 
+## Super Users Id / Password
+
+| User Name         |  Password     |
+|-------------------|---------------|
+| admin	            |  admin        |
+| user1	            |  demo@123     |
+   
+
+     
 ## Authentication
 * The API is protected using session-based authentication (by default).
 * For API access, login using Django's built-in admin panel at /admin/.

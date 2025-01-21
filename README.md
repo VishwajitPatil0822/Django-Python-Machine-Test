@@ -62,22 +62,52 @@ With the use of Django for backend development and a reliable MySQL database for
 
 ## Installation & Setup
 
-1. Clone the repository:                   
-git clone https://github.com/VishwajitPatil0822/Django-Python-Machine-Test.git   
-    cd your-repo
+1. Clone the repository:
+                  
+            git clone https://github.com/VishwajitPatil0822/Django-Python-Machine-Test.git   
 
-2. Create a virtual environment and activate it:    
-    python -m venv venv  
-    source venv/bin/activate
+            cd your-repo
 
-3. Install dependencies:       
-    pip install -r requirements.txt  
 
-4. Configure database settings in   'settings.py'
+2. Create a virtual environment and activate it:
 
-5. Apply migrations and start the server:    
-    python manage.py migrate  
-    python manage.py runserver  
+           python -m venv venv
+   
+           source venv/bin/activate
+
+
+3. Install dependencies:
+         
+          pip install -r requirements.txt  
+
+
+
+4. Configure database settings in 'settings.py'
+
+ DATABASES = {
+ 
+         'default': {
+         
+                 'ENGINE': 'django.db.backends.mysql',
+                 
+                 'NAME': 'client_project_management_system_db',
+                   
+                 'USER': 'root',
+                  
+                 'PASSWORD': 'root',
+                 
+                 'HOST': 'localhost',
+        
+                 'PORT': '3306',
+        
+              }
+        }
+
+
+5. Apply migrations and start the server:
+    
+                  python manage.py migrate  
+                  python manage.py runserver  
 
 
 
